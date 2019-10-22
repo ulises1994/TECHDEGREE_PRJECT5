@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .mini-container {
   width: 90%;
   float: left;
@@ -85,7 +90,6 @@
     margin-left: .5%;
   }
 }
-
 @media (min-width:1025px) {
   .container {
     width: 90%;
@@ -93,7 +97,9 @@
   }
 
   .mini-container {
-    width: 24%;
-    margin-left: 1%;
+    width: 20%;
+    margin-left: 4%;
+    margin-top: 3%;
+    margin-bottom: 1%;
   }
 }
