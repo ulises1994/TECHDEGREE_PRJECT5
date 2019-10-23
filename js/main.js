@@ -28,9 +28,9 @@ function myFunction() {
 
     //searches through the attributes
     if ((a.toUpperCase().indexOf(filter) > -1) || (b.toUpperCase().indexOf(filter) > -1)) {
-      li[i].style.display = "";
+      li[i].parentElement.style.display = "";
     } else {
-      li[i].style.display = "none";
+      li[i].parentElement.style.display = "none";
     }
   }
 }
